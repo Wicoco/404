@@ -1,0 +1,23 @@
+{
+  "functions": {
+    "api/cron.js": {
+      "maxDuration": 300
+    },
+    "api/check-links.js": {
+      "maxDuration": 300
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/cron",
+      "schedule": "0 8 * * *"
+    }
+  ],
+  "env": {
+    "SITEMAP_URL": "https://www.stereolabs.com/sitemap.xml",
+    "SLACK_WEBHOOK_URL": "@slack_webhook_url",
+    "SLACK_CHANNEL": "#tech-alerts",
+    "MAX_CONCURRENT_CHECKS": "10",
+    "REQUEST_TIMEOUT": "10000"
+  }
+}

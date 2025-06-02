@@ -1,0 +1,29 @@
+{
+  "name": "stereolabs-link-checker",
+  "version": "1.0.0",
+  "description": "Automated link checker for Stereolabs website - detects 404 errors only",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "vercel build",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  },
+  "keywords": [
+    "link-checker",
+    "seo",
+    "404-detection",
+    "stereolabs",
+    "automation",
+    "slack-notifications"
+  ],
+  "author": "Stereolabs Tech Team",
+  "license": "MIT"
+}
