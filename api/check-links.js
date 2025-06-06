@@ -26,7 +26,7 @@ export default async function handler(request, response) {
   try {
     // Configuration
     const sitemapUrl = request.query.sitemap || process.env.SITEMAP_URL || 'https://www.stereolabs.com/sitemap.xml';
-    const notifySlack = request.query.notify !== 'false'; // Par défaut true
+    const notifySlack = request.query.notify !== 'true'; // Par défaut true
     const maxPages = request.query.maxPages ? parseInt(request.query.maxPages) : null; // Limite pour tests
     
     console.log('📡 Sitemap configuré:', sitemapUrl);
